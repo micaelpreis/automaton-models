@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XmlAutomaton Stochastic="false" numberOfAgents="1" hasOutput="false">
+    <state name="+VV,M1_idle,M2_idle,AC_almost" marked="false">
+        <position x="300" y="546"/>
+        <size width="290" height="40"/>
+    </state>
+    <state name="+VV,M1_idle,M2_idle,AC_ready" marked="true" initial="true">
+        <position x="267" y="0"/>
+        <size width="280" height="46"/>
+        <initialPosition x="-28" y="-28"/>
+    </state>
+    <state name="CC,M1_busy,M2_busy,AC_almost" marked="false">
+        <position x="356" y="366"/>
+        <size width="280" height="40"/>
+    </state>
+    <state name="CC,M1_busy,M2_busy,AC_ready" marked="false">
+        <position x="0" y="546"/>
+        <size width="270" height="40"/>
+    </state>
+    <state name="CV,M1_busy,M2_idle,AC_almost" marked="false">
+        <position x="226" y="636"/>
+        <size width="280" height="40"/>
+    </state>
+    <state name="CV,M1_busy,M2_idle,AC_ready" marked="false">
+        <position x="190" y="96"/>
+        <size width="270" height="40"/>
+    </state>
+    <state name="V+V,M1_idle,M2_idle,AC_almost" marked="false">
+        <position x="180" y="186"/>
+        <size width="290" height="40"/>
+    </state>
+    <state name="V+V,M1_idle,M2_idle,AC_ready" marked="true">
+        <position x="311" y="726"/>
+        <size width="280" height="46"/>
+    </state>
+    <state name="VC,M1_idle,M2_busy,AC_almost" marked="false">
+        <position x="259" y="276"/>
+        <size width="280" height="40"/>
+    </state>
+    <state name="VC,M1_idle,M2_busy,AC_ready" marked="false">
+        <position x="292" y="456"/>
+        <size width="270" height="40"/>
+    </state>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="+VV,M1_idle,M2_idle,AC_almost" to="CV,M1_busy,M2_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="+VV,M1_idle,M2_idle,AC_ready" to="CV,M1_busy,M2_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CC,M1_busy,M2_busy,AC_almost" to="VC,M1_idle,M2_busy,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="CC,M1_busy,M2_busy,AC_almost" to="CV,M1_busy,M2_idle,AC_ready" legal="true">
+        <pathPoint x="569" y="296"/>
+        <pathPoint x="500" y="206"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CC,M1_busy,M2_busy,AC_ready" to="VC,M1_idle,M2_busy,AC_almost" legal="true">
+        <pathPoint x="160" y="476"/>
+        <pathPoint x="279" y="386"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="CC,M1_busy,M2_busy,AC_ready" to="CV,M1_busy,M2_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CV,M1_busy,M2_idle,AC_almost" to="V+V,M1_idle,M2_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_busy,M2_idle,AC_almost" to="CC,M1_busy,M2_busy,AC_almost" legal="true">
+        <pathPoint x="650" y="566"/>
+        <pathPoint x="592" y="476"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CV,M1_busy,M2_idle,AC_ready" to="V+V,M1_idle,M2_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_busy,M2_idle,AC_ready" to="CC,M1_busy,M2_busy,AC_ready" legal="true">
+        <pathPoint x="150" y="206"/>
+        <pathPoint x="72" y="296"/>
+        <pathPoint x="91" y="386"/>
+        <pathPoint x="106" y="476"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="V+V,M1_idle,M2_idle,AC_almost" to="VC,M1_idle,M2_busy,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="V+V,M1_idle,M2_idle,AC_ready" to="VC,M1_idle,M2_busy,AC_ready" legal="true">
+        <pathPoint x="536" y="656"/>
+        <pathPoint x="620" y="566"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_idle,M2_busy,AC_almost" to="CC,M1_busy,M2_busy,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="VC,M1_idle,M2_busy,AC_almost" to="+VV,M1_idle,M2_idle,AC_ready" legal="true">
+        <pathPoint x="530" y="206"/>
+        <pathPoint x="490" y="116"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_idle,M2_busy,AC_ready" to="CC,M1_busy,M2_busy,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="VC,M1_idle,M2_busy,AC_ready" to="+VV,M1_idle,M2_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="E1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="D1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="E2" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="D2" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <initial>+VV,M1_idle,M2_idle,AC_ready</initial>
+</XmlAutomaton>

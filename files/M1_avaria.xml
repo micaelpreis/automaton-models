@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XmlAutomaton Stochastic="false" numberOfAgents="1" hasOutput="false">
+    <state name="M1_busy" marked="false">
+        <position x="345" y="119"/>
+        <size width="65" height="40"/>
+    </state>
+    <state name="M1_erro_busy" marked="false">
+        <position x="335" y="283"/>
+        <size width="85" height="40"/>
+    </state>
+    <state name="M1_erro_idle" marked="true">
+        <position x="129" y="282"/>
+        <size width="81" height="40"/>
+    </state>
+    <state name="M1_idle" marked="true" initial="true">
+        <position x="131" y="113"/>
+        <size width="69" height="46"/>
+        <initialPosition x="-28" y="-28"/>
+    </state>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="M1_busy" to="M1_idle" legal="true">
+        <pathPoint x="316" y="158"/>
+        <pathPoint x="229" y="157"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="M1_busy" to="M1_erro_idle" legal="true"/>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="M1_erro_busy" to="M1_erro_idle" legal="true">
+        <pathPoint x="306" y="323"/>
+        <pathPoint x="239" y="323"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="M1_erro_idle" to="M1_erro_busy" legal="true"/>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="M1_idle" to="M1_busy" legal="true"/>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="E1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="D1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="ER1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <initial>M1_idle</initial>
+</XmlAutomaton>

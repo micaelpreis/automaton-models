@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XmlAutomaton Stochastic="false" numberOfAgents="1" hasOutput="false">
+    <state name="CC,M1_busy,M2_busy,AC_almost" marked="false">
+        <position x="580" y="183"/>
+        <size width="280" height="40"/>
+    </state>
+    <state name="CC,M1_busy,M2_busy,AC_ready" marked="false">
+        <position x="757" y="0"/>
+        <size width="270" height="40"/>
+    </state>
+    <state name="CC,M1_busy,M2_erro_busy,AC_almost" marked="false">
+        <position x="878" y="1101"/>
+        <size width="330" height="40"/>
+    </state>
+    <state name="CC,M1_busy,M2_erro_busy,AC_ready" marked="false">
+        <position x="983" y="1284"/>
+        <size width="320" height="40"/>
+    </state>
+    <state name="CC,M1_erro_busy,M2_busy,AC_almost" marked="false">
+        <position x="137" y="918"/>
+        <size width="330" height="40"/>
+    </state>
+    <state name="CC,M1_erro_busy,M2_busy,AC_ready" marked="false">
+        <position x="319" y="552"/>
+        <size width="320" height="40"/>
+    </state>
+    <state name="CC,M1_erro_busy,M2_erro_busy,AC_almost" marked="false">
+        <position x="13" y="1284"/>
+        <size width="380" height="40"/>
+    </state>
+    <state name="CC,M1_erro_busy,M2_erro_busy,AC_ready" marked="false">
+        <position x="466" y="1284"/>
+        <size width="370" height="40"/>
+    </state>
+    <state name="CV,M1_busy,M2_erro_idle,AC_almost" marked="false">
+        <position x="673" y="1008"/>
+        <size width="330" height="40"/>
+    </state>
+    <state name="CV,M1_busy,M2_erro_idle,AC_ready" marked="false">
+        <position x="925" y="828"/>
+        <size width="320" height="40"/>
+    </state>
+    <state name="CV,M1_busy,M2_idle,AC_almost" marked="false">
+        <position x="257" y="90"/>
+        <size width="280" height="40"/>
+    </state>
+    <state name="CV,M1_busy,M2_idle,AC_ready" marked="false">
+        <position x="423" y="276"/>
+        <size width="270" height="40"/>
+    </state>
+    <state name="CV,M1_erro_busy,M2_erro_idle,AC_almost" marked="false">
+        <position x="0" y="1194"/>
+        <size width="380" height="40"/>
+    </state>
+    <state name="CV,M1_erro_busy,M2_erro_idle,AC_ready" marked="false">
+        <position x="440" y="1194"/>
+        <size width="370" height="40"/>
+    </state>
+    <state name="CV,M1_erro_busy,M2_idle,AC_almost" marked="false">
+        <position x="32" y="828"/>
+        <size width="330" height="40"/>
+    </state>
+    <state name="CV,M1_erro_busy,M2_idle,AC_ready" marked="false">
+        <position x="355" y="462"/>
+        <size width="320" height="40"/>
+    </state>
+    <state name="VC,M1_erro_idle,M2_busy,AC_almost" marked="false">
+        <position x="189" y="1008"/>
+        <size width="330" height="40"/>
+    </state>
+    <state name="VC,M1_erro_idle,M2_busy,AC_ready" marked="false">
+        <position x="229" y="642"/>
+        <size width="320" height="40"/>
+    </state>
+    <state name="VC,M1_erro_idle,M2_erro_busy,AC_almost" marked="false">
+        <position x="123" y="1374"/>
+        <size width="380" height="40"/>
+    </state>
+    <state name="VC,M1_erro_idle,M2_erro_busy,AC_ready" marked="false">
+        <position x="571" y="1374"/>
+        <size width="370" height="40"/>
+    </state>
+    <state name="VC,M1_idle,M2_busy,AC_almost" marked="false">
+        <position x="567" y="90"/>
+        <size width="280" height="40"/>
+    </state>
+    <state name="VC,M1_idle,M2_busy,AC_ready" marked="false">
+        <position x="926" y="642"/>
+        <size width="270" height="40"/>
+    </state>
+    <state name="VC,M1_idle,M2_erro_busy,AC_almost" marked="false">
+        <position x="978" y="1374"/>
+        <size width="330" height="40"/>
+    </state>
+    <state name="VC,M1_idle,M2_erro_busy,AC_ready" marked="false">
+        <position x="930" y="1194"/>
+        <size width="320" height="40"/>
+    </state>
+    <state name="VV,M1_erro_idle,M2_erro_idle,AC_almost" marked="false">
+        <position x="38" y="1101"/>
+        <size width="380" height="40"/>
+    </state>
+    <state name="VV,M1_erro_idle,M2_erro_idle,AC_ready" marked="true">
+        <position x="478" y="1098"/>
+        <size width="370" height="46"/>
+    </state>
+    <state name="VV,M1_erro_idle,M2_idle,AC_almost" marked="false">
+        <position x="12" y="735"/>
+        <size width="330" height="40"/>
+    </state>
+    <state name="VV,M1_erro_idle,M2_idle,AC_ready" marked="true">
+        <position x="365" y="366"/>
+        <size width="320" height="46"/>
+    </state>
+    <state name="VV,M1_idle,M2_erro_idle,AC_almost" marked="false">
+        <position x="983" y="918"/>
+        <size width="330" height="40"/>
+    </state>
+    <state name="VV,M1_idle,M2_erro_idle,AC_ready" marked="true">
+        <position x="892" y="732"/>
+        <size width="320" height="46"/>
+    </state>
+    <state name="VV,M1_idle,M2_idle,AC_almost" marked="false">
+        <position x="372" y="735"/>
+        <size width="280" height="40"/>
+    </state>
+    <state name="VV,M1_idle,M2_idle,AC_ready" marked="true" initial="true">
+        <position x="280" y="180"/>
+        <size width="270" height="46"/>
+        <initialPosition x="-28" y="-28"/>
+    </state>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CC,M1_busy,M2_busy,AC_almost" to="VC,M1_idle,M2_busy,AC_ready" legal="true">
+        <pathPoint x="723" y="296"/>
+        <pathPoint x="729" y="389"/>
+        <pathPoint x="808" y="482"/>
+        <pathPoint x="877" y="572"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC,M1_busy,M2_busy,AC_almost" to="VC,M1_erro_idle,M2_busy,AC_almost" legal="true">
+        <pathPoint x="765" y="296"/>
+        <pathPoint x="810" y="389"/>
+        <pathPoint x="868" y="482"/>
+        <pathPoint x="907" y="572"/>
+        <pathPoint x="838" y="662"/>
+        <pathPoint x="832" y="755"/>
+        <pathPoint x="707" y="848"/>
+        <pathPoint x="557" y="938"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="CC,M1_busy,M2_busy,AC_almost" to="CV,M1_busy,M2_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC,M1_busy,M2_busy,AC_almost" to="CV,M1_busy,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="806" y="296"/>
+        <pathPoint x="892" y="389"/>
+        <pathPoint x="928" y="482"/>
+        <pathPoint x="937" y="572"/>
+        <pathPoint x="896" y="662"/>
+        <pathPoint x="862" y="755"/>
+        <pathPoint x="770" y="848"/>
+        <pathPoint x="668" y="938"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CC,M1_busy,M2_busy,AC_ready" to="VC,M1_idle,M2_busy,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC,M1_busy,M2_busy,AC_ready" to="VC,M1_erro_idle,M2_busy,AC_ready" legal="true">
+        <pathPoint x="877" y="110"/>
+        <pathPoint x="975" y="203"/>
+        <pathPoint x="1061" y="296"/>
+        <pathPoint x="1090" y="389"/>
+        <pathPoint x="1120" y="482"/>
+        <pathPoint x="1138" y="572"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="CC,M1_busy,M2_busy,AC_ready" to="CV,M1_busy,M2_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC,M1_busy,M2_busy,AC_ready" to="CV,M1_busy,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="907" y="110"/>
+        <pathPoint x="1080" y="203"/>
+        <pathPoint x="1150" y="296"/>
+        <pathPoint x="1186" y="389"/>
+        <pathPoint x="1209" y="482"/>
+        <pathPoint x="1229" y="572"/>
+        <pathPoint x="1256" y="662"/>
+        <pathPoint x="1294" y="755"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CC,M1_busy,M2_erro_busy,AC_almost" to="VC,M1_idle,M2_erro_busy,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC,M1_busy,M2_erro_busy,AC_almost" to="VC,M1_erro_idle,M2_erro_busy,AC_almost" legal="true">
+        <pathPoint x="870" y="1214"/>
+        <pathPoint x="896" y="1304"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC,M1_busy,M2_erro_busy,AC_almost" to="CV,M1_busy,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="964" y="1107"/>
+        <pathPoint x="899" y="1078"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CC,M1_busy,M2_erro_busy,AC_ready" to="VC,M1_idle,M2_erro_busy,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC,M1_busy,M2_erro_busy,AC_ready" to="VC,M1_erro_idle,M2_erro_busy,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC,M1_busy,M2_erro_busy,AC_ready" to="CV,M1_busy,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="1310" y="1214"/>
+        <pathPoint x="1298" y="1121"/>
+        <pathPoint x="1123" y="1028"/>
+        <pathPoint x="953" y="938"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC,M1_erro_busy,M2_busy,AC_almost" to="VC,M1_erro_idle,M2_busy,AC_almost" legal="true">
+        <pathPoint x="310" y="993"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="CC,M1_erro_busy,M2_busy,AC_almost" to="CV,M1_erro_busy,M2_idle,AC_ready" legal="true">
+        <pathPoint x="550" y="848"/>
+        <pathPoint x="772" y="755"/>
+        <pathPoint x="722" y="662"/>
+        <pathPoint x="669" y="572"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC,M1_erro_busy,M2_busy,AC_almost" to="CV,M1_erro_busy,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="153" y="1028"/>
+        <pathPoint x="4" y="1121"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC,M1_erro_busy,M2_busy,AC_ready" to="VC,M1_erro_idle,M2_busy,AC_ready" legal="true">
+        <pathPoint x="424" y="598"/>
+        <pathPoint x="415" y="607"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="CC,M1_erro_busy,M2_busy,AC_ready" to="CV,M1_erro_busy,M2_idle,AC_almost" legal="true">
+        <pathPoint x="579" y="662"/>
+        <pathPoint x="712" y="755"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC,M1_erro_busy,M2_busy,AC_ready" to="CV,M1_erro_busy,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="609" y="662"/>
+        <pathPoint x="742" y="755"/>
+        <pathPoint x="520" y="848"/>
+        <pathPoint x="497" y="938"/>
+        <pathPoint x="549" y="1028"/>
+        <pathPoint x="448" y="1121"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC,M1_erro_busy,M2_erro_busy,AC_almost" to="VC,M1_erro_idle,M2_erro_busy,AC_almost" legal="true">
+        <pathPoint x="237" y="1358"/>
+        <pathPoint x="253" y="1370"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC,M1_erro_busy,M2_erro_busy,AC_almost" to="CV,M1_erro_busy,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="176" y="1261"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC,M1_erro_busy,M2_erro_busy,AC_ready" to="VC,M1_erro_idle,M2_erro_busy,AC_ready" legal="true">
+        <pathPoint x="683" y="1358"/>
+        <pathPoint x="697" y="1370"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC,M1_erro_busy,M2_erro_busy,AC_ready" to="CV,M1_erro_busy,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="618" y="1264"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CV,M1_busy,M2_erro_idle,AC_almost" to="VV,M1_idle,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="725" y="938"/>
+        <pathPoint x="865" y="848"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV,M1_busy,M2_erro_idle,AC_almost" to="VV,M1_erro_idle,M2_erro_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_busy,M2_erro_idle,AC_almost" to="CC,M1_busy,M2_erro_busy,AC_almost" legal="true">
+        <pathPoint x="899" y="1078"/>
+        <pathPoint x="964" y="1107"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CV,M1_busy,M2_erro_idle,AC_ready" to="VV,M1_idle,M2_erro_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV,M1_busy,M2_erro_idle,AC_ready" to="VV,M1_erro_idle,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="839" y="938"/>
+        <pathPoint x="1063" y="1028"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_busy,M2_erro_idle,AC_ready" to="CC,M1_busy,M2_erro_busy,AC_ready" legal="true">
+        <pathPoint x="896" y="938"/>
+        <pathPoint x="1093" y="1028"/>
+        <pathPoint x="1268" y="1121"/>
+        <pathPoint x="1280" y="1214"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CV,M1_busy,M2_idle,AC_almost" to="VV,M1_idle,M2_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV,M1_busy,M2_idle,AC_almost" to="VV,M1_erro_idle,M2_idle,AC_almost" legal="true">
+        <pathPoint x="203" y="203"/>
+        <pathPoint x="59" y="296"/>
+        <pathPoint x="64" y="389"/>
+        <pathPoint x="57" y="482"/>
+        <pathPoint x="54" y="572"/>
+        <pathPoint x="55" y="662"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_busy,M2_idle,AC_almost" to="CC,M1_busy,M2_busy,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CV,M1_busy,M2_idle,AC_ready" to="VV,M1_idle,M2_idle,AC_almost" legal="true">
+        <pathPoint x="317" y="389"/>
+        <pathPoint x="217" y="482"/>
+        <pathPoint x="195" y="572"/>
+        <pathPoint x="171" y="662"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV,M1_busy,M2_idle,AC_ready" to="VV,M1_erro_idle,M2_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_busy,M2_idle,AC_ready" to="CC,M1_busy,M2_busy,AC_ready" legal="true">
+        <pathPoint x="1110" y="203"/>
+        <pathPoint x="937" y="110"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV,M1_erro_busy,M2_erro_idle,AC_almost" to="VV,M1_erro_idle,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="190" y="1159"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_erro_busy,M2_erro_idle,AC_almost" to="CC,M1_erro_busy,M2_erro_busy,AC_almost" legal="true">
+        <pathPoint x="176" y="1261"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV,M1_erro_busy,M2_erro_idle,AC_ready" to="VV,M1_erro_idle,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="624" y="1161"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_erro_busy,M2_erro_idle,AC_ready" to="CC,M1_erro_busy,M2_erro_busy,AC_ready" legal="true">
+        <pathPoint x="618" y="1264"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV,M1_erro_busy,M2_idle,AC_almost" to="VV,M1_erro_idle,M2_idle,AC_almost" legal="true">
+        <pathPoint x="167" y="805"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_erro_busy,M2_idle,AC_almost" to="CC,M1_erro_busy,M2_busy,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV,M1_erro_busy,M2_idle,AC_ready" to="VV,M1_erro_idle,M2_idle,AC_ready" legal="true">
+        <pathPoint x="499" y="434"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV,M1_erro_busy,M2_idle,AC_ready" to="CC,M1_erro_busy,M2_busy,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_erro_idle,M2_busy,AC_almost" to="CC,M1_erro_busy,M2_busy,AC_almost" legal="true">
+        <pathPoint x="310" y="993"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="VC,M1_erro_idle,M2_busy,AC_almost" to="VV,M1_erro_idle,M2_idle,AC_ready" legal="true">
+        <pathPoint x="527" y="938"/>
+        <pathPoint x="645" y="848"/>
+        <pathPoint x="802" y="755"/>
+        <pathPoint x="777" y="662"/>
+        <pathPoint x="741" y="572"/>
+        <pathPoint x="705" y="482"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC,M1_erro_idle,M2_busy,AC_almost" to="VV,M1_erro_idle,M2_erro_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_erro_idle,M2_busy,AC_ready" to="CC,M1_erro_busy,M2_busy,AC_ready" legal="true">
+        <pathPoint x="415" y="607"/>
+        <pathPoint x="424" y="598"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="VC,M1_erro_idle,M2_busy,AC_ready" to="VV,M1_erro_idle,M2_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC,M1_erro_idle,M2_busy,AC_ready" to="VV,M1_erro_idle,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="682" y="755"/>
+        <pathPoint x="392" y="848"/>
+        <pathPoint x="53" y="938"/>
+        <pathPoint x="74" y="1028"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_erro_idle,M2_erro_busy,AC_almost" to="CC,M1_erro_busy,M2_erro_busy,AC_almost" legal="true">
+        <pathPoint x="253" y="1370"/>
+        <pathPoint x="237" y="1358"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC,M1_erro_idle,M2_erro_busy,AC_almost" to="VV,M1_erro_idle,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="423" y="1304"/>
+        <pathPoint x="410" y="1214"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_erro_idle,M2_erro_busy,AC_ready" to="CC,M1_erro_busy,M2_erro_busy,AC_ready" legal="true">
+        <pathPoint x="697" y="1370"/>
+        <pathPoint x="683" y="1358"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC,M1_erro_idle,M2_erro_busy,AC_ready" to="VV,M1_erro_idle,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="866" y="1304"/>
+        <pathPoint x="840" y="1214"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_idle,M2_busy,AC_almost" to="CC,M1_busy,M2_busy,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="VC,M1_idle,M2_busy,AC_almost" to="VV,M1_idle,M2_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC,M1_idle,M2_busy,AC_almost" to="VV,M1_idle,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="890" y="203"/>
+        <pathPoint x="977" y="296"/>
+        <pathPoint x="1010" y="389"/>
+        <pathPoint x="1059" y="482"/>
+        <pathPoint x="1108" y="572"/>
+        <pathPoint x="1226" y="662"/>
+        <pathPoint x="1264" y="755"/>
+        <pathPoint x="1275" y="848"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_idle,M2_busy,AC_ready" to="CC,M1_busy,M2_busy,AC_ready" legal="true">
+        <pathPoint x="1259" y="572"/>
+        <pathPoint x="1269" y="482"/>
+        <pathPoint x="1268" y="389"/>
+        <pathPoint x="1276" y="296"/>
+        <pathPoint x="1263" y="203"/>
+        <pathPoint x="1077" y="110"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="VC,M1_idle,M2_busy,AC_ready" to="VV,M1_idle,M2_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC,M1_idle,M2_busy,AC_ready" to="VV,M1_idle,M2_erro_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_idle,M2_erro_busy,AC_almost" to="CC,M1_busy,M2_erro_busy,AC_almost" legal="true">
+        <pathPoint x="946" y="1304"/>
+        <pathPoint x="900" y="1214"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC,M1_idle,M2_erro_busy,AC_almost" to="VV,M1_idle,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="1333" y="1304"/>
+        <pathPoint x="1340" y="1214"/>
+        <pathPoint x="1328" y="1121"/>
+        <pathPoint x="1238" y="1028"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC,M1_idle,M2_erro_busy,AC_ready" to="CC,M1_busy,M2_erro_busy,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC,M1_idle,M2_erro_busy,AC_ready" to="VV,M1_idle,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="1238" y="1121"/>
+        <pathPoint x="1033" y="1028"/>
+        <pathPoint x="782" y="938"/>
+        <pathPoint x="895" y="848"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV,M1_erro_idle,M2_erro_idle,AC_almost" to="CV,M1_erro_busy,M2_erro_idle,AC_almost" legal="true">
+        <pathPoint x="190" y="1159"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV,M1_erro_idle,M2_erro_idle,AC_ready" to="CV,M1_erro_busy,M2_erro_idle,AC_ready" legal="true">
+        <pathPoint x="624" y="1161"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV,M1_erro_idle,M2_idle,AC_almost" to="CV,M1_erro_busy,M2_idle,AC_almost" legal="true">
+        <pathPoint x="167" y="805"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV,M1_erro_idle,M2_idle,AC_ready" to="CV,M1_erro_busy,M2_idle,AC_ready" legal="true">
+        <pathPoint x="499" y="434"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV,M1_idle,M2_erro_idle,AC_almost" to="CV,M1_busy,M2_erro_idle,AC_almost" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV,M1_idle,M2_erro_idle,AC_ready" to="CV,M1_busy,M2_erro_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV,M1_idle,M2_idle,AC_almost" to="CV,M1_busy,M2_idle,AC_almost" legal="true">
+        <pathPoint x="113" y="662"/>
+        <pathPoint x="124" y="572"/>
+        <pathPoint x="136" y="482"/>
+        <pathPoint x="155" y="389"/>
+        <pathPoint x="147" y="296"/>
+        <pathPoint x="250" y="203"/>
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV,M1_idle,M2_idle,AC_ready" to="CV,M1_busy,M2_idle,AC_ready" legal="true">
+        <labelPosition x="500" y="0"/>
+    </transition>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="E1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="D1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="ER1" observable="false" controllable="true">
+        <AgentProperty observable="false" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="E2" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="D2" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="ER2" observable="false" controllable="true">
+        <AgentProperty observable="false" controllable="true"/>
+    </event>
+    <initial>VV,M1_idle,M2_idle,AC_ready</initial>
+</XmlAutomaton>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XmlAutomaton Stochastic="false" numberOfAgents="1" hasOutput="false">
+    <state name="M1_busy" marked="false">
+        <position x="252" y="101"/>
+        <size width="79" height="40"/>
+    </state>
+    <state name="M1_idle" marked="true" initial="true">
+        <position x="102" y="101"/>
+        <size width="69" height="40"/>
+        <initialPosition x="-28" y="-28"/>
+    </state>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="M1_busy" to="M1_idle" legal="true">
+        <pathPoint x="222" y="103"/>
+        <pathPoint x="199" y="103"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="M1_idle" to="M1_busy" legal="true"/>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="E1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="D1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <initial>M1_idle</initial>
+</XmlAutomaton>

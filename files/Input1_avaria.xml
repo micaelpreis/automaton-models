@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<XmlAutomaton Stochastic="false" numberOfAgents="1" hasOutput="false">
+    <state name="CC" marked="false">
+        <position x="360" y="124"/>
+        <size width="40" height="40"/>
+    </state>
+    <state name="CV" marked="false">
+        <position x="199" y="20"/>
+        <size width="40" height="40"/>
+    </state>
+    <state name="VC" marked="false">
+        <position x="204" y="229"/>
+        <size width="40" height="40"/>
+    </state>
+    <state name="VV" marked="true" initial="true">
+        <position x="48" y="125"/>
+        <size width="40" height="40"/>
+        <initialPosition x="-28" y="-28"/>
+    </state>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="CC" to="CV" legal="true">
+        <pathPoint x="328" y="134"/>
+        <pathPoint x="249" y="83"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="CC" to="CV" legal="true">
+        <pathPoint x="350" y="101"/>
+        <pathPoint x="271" y="50"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CC" to="VC" legal="true">
+        <pathPoint x="328" y="155"/>
+        <pathPoint x="253" y="205"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CC" to="VC" legal="true">
+        <pathPoint x="351" y="188"/>
+        <pathPoint x="275" y="238"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D1" from="CV" to="VV" legal="true">
+        <pathPoint x="168" y="51"/>
+        <pathPoint x="97" y="101"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER1" from="CV" to="VV" legal="true">
+        <pathPoint x="191" y="84"/>
+        <pathPoint x="120" y="134"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E2" from="CV" to="CC" legal="true"/>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VC" to="CC" legal="true"/>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="D2" from="VC" to="VV" legal="true"/>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="ER2" from="VC" to="VV" legal="true">
+        <pathPoint x="172" y="238"/>
+        <pathPoint x="98" y="189"/>
+    </transition>
+    <transition xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlTransition" name="E1" from="VV" to="CV" legal="true"/>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="E1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="D1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="ER1" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="E2" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="D2" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <event xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="XmlEvent" name="ER2" observable="true" controllable="true">
+        <AgentProperty observable="true" controllable="true"/>
+    </event>
+    <initial>VV</initial>
+</XmlAutomaton>
